@@ -1,129 +1,236 @@
 # Smartess
 
-## Smartess Deployed Website
-https://smartess.vercel.app/
+**An all-in-one smart home management platform for residential communities**
 
-# RELEASE 3
+Smartess bridges the gap between tenants and property owners through intelligent home automation and centralized management. While tenants enjoy a fully integrated smart home experience in their units, property owners gain comprehensive oversight through real-time monitoring, automated communication tools, and data-driven insights.
 
-## Release 3 Presentation/Demo
+**Live Demo:** https://smartess.vercel.app/
 
-Given the size of our project and that we have two teams (hub and website) our full presentation is 8 minutes over limit but only covers essential and fundemental parts of the project.
+## Overview
 
-https://drive.google.com/file/d/1w1BCWQPlqrisWkyoj2oj-TvpI7K_VQ4S/view?usp=sharing
+Property management in modern residential communities requires sophisticated tools to handle smart home devices, tenant communications, and building operations effectively. Smartess addresses these challenges by providing a unified platform that collects data from smart appliances and IoT devices, processes it in real-time, and presents actionable insights through an intuitive web interface.
 
+The platform serves dual purposes: empowering tenants with seamless smart home control while giving property owners the visibility and tools they need to manage their buildings efficiently. From automated maintenance request handling to real-time energy consumption monitoring, Smartess transforms how residential communities operate.
 
+## Team
 
-## Release 3 full powerpoint slides
+| Name                   | GitHub                                            | Email                         |
+| ---------------------- | ------------------------------------------------- | ----------------------------- |
+| **Lauren Rigante**     | [laurenrigante](https://github.com/laurenrigante) | lrigante@hotmail.com          |
+| Leo Brodeur            | [leobrod44](https://github.com/leobrod44)         | leobrod44@gmail.com           |
+| Layana Muhdi Al Tounsi | [layanat](https://github.com/layanat)             | tounsilayana@gmail.com        |
+| Charles Eimer          | [eimcharles](https://github.com/eimcharles)       | c.eimer@me.com                |
+| Antoine Cantin         | [ChiefsBestPal](https://github.com/ChiefsBestPal) | antoine.cantin@icloud.com     |
+| Tuan Anh Pham          | [TuanAnh-P](https://github.com/TuanAnh-P)         | 1tuananhp@gmail.com           |
+| Matthew Flaherty       | [mattflahertyy](https://github.com/mattflahertyy) | matthewflaherty77@hotmail.com |
+| Renaud Senécal         | [SenecalRenaud](https://github.com/SenecalRenaud) | senecalrenaud@gmail.com       |
+| Ryan Li                | [Ryan2Li](https://github.com/Ryan2Li)             | ryanlijune@gmail.com          |
+| Abdullah Amir          | [AA789-ai](https://github.com/AA789-ai)           | sonubhaii883@gmail.com        |
 
-[Smartess Release 3 Presentation Slides](https://github.com/user-attachments/files/19696745/_Smartess.Release.3.Presentation.pdf)
+## Technology Stack
 
-## Important files
-### Top 5 files
-  
-| File path with clickable link | Purpose (1 line description) |
-|------|------------|
-|[go/hub/rtsp/rtsp.go](go/hub/rtsp/rtsp.go)|Hub video stream interception and publishing|
-|[go/hub/events/events.go](go/hub/events/events.go)|Event/alert handling for all home assistant events from hubs|
-|[smartessweb/frontend/src/app/dashboard/page.tsx](https://github.com/leobrod44/Smartess/blob/main/smartessweb/frontend/src/app/dashboard/page.tsx)|Dashboard page, main entry for multiple components. |
-|[smartessweb/backend/controllers/manageAccountsController.js](smartessweb/backend/controllers/manageAccountsController.js)|Contains most logic related to user accounts management |
-|[smartessweb/frontend/src/app/dashboard/manage-accounts/page.tsx](smartessweb/frontend/src/app/dashboard/manage-accounts/page.tsx)|Role-based UI controls for managing organization users. |
-### Top 5 Tests
-| File path with clickable link | Purpose (1 line description) |
-|------|------------|
-|[go/tests/rtsp_test.go](go/tests/rtsp_test.go)|Integration test for hub rtsp stream interception and publish to RabbitMQ|
-|[smartessweb/backend/tests/controllers/manageAccountsController.test.js](smartessweb/backend/tests/controllers/manageAccountsController.test.js)|Tests behavior for account manager controllers|
-|[smartessweb/backend/tests/controllers/projectController.test.js](smartessweb/backend/tests/controllers/projectController.test.js)|Tests behavior of projects data retrieval for web|
-|[smartessweb/backend/tests/controllers/ticketsController.test.js](smartessweb/backend/tests/controllers/ticketsController.test.js)|Tests controllers to retrieve tickets related functionalities.|
-|[smartessweb/frontend/__tests__/ProjectComponent.test.tsx](https://github.com/leobrod44/Smartess/blob/main/smartessweb/frontend/__tests__/ProjectComponent.test.tsx)|Test the frontend Project component’s behavior|
+### Backend Services
 
+- **Go**: High-performance microservices architecture
+- **RabbitMQ**: Message queuing and event streaming
+- **MongoDB**: Primary database for application data
+- **Supabase**: Authentication and real-time features
+- **WebRTC**: Real-time video communication
 
-# RELEASE 2
-## Release 2 Presentation/Demo
-https://drive.google.com/file/d/1MvIh3tUW6fsqQBHBUWBLqvQHEsESYOVF/view?usp=sharing
+### Frontend
 
-[Smartess Release 2 Presentation Slides](https://github.com/user-attachments/files/19556576/Smartess.Release.2.Presentation.pdf)
+- **Next.js 14**: React-based web framework
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling
+- **Material-UI**: Component library
+- **Recharts**: Data visualization
 
+### Infrastructure & Monitoring
 
-## Important files (Release 2)
-### Top 5 files
-  
-| File path with clickable link | Purpose (1 line description) |
-|------|------------|
-|[go/hub/rtsp/rtsp.go](go/hub/rtsp/rtsp.go)|Hub video stream interception and publishing|
-|[go/hub/events/events.go](go/hub/events/events.go)|Event/alert handling for all home assistant events from hubs|
-|[smartessweb/frontend/src/app/dashboard/page.tsx](https://github.com/leobrod44/Smartess/blob/main/smartessweb/frontend/src/app/dashboard/page.tsx)|Dashboard page, main entry for multiple components. |
-|[smartessweb/backend/controllers/manageAccountsController.js](smartessweb/backend/controllers/manageAccountsController.js)|Contains most logic related to user accounts management |
-|[smartessweb/frontend/src/app/dashboard/manage-accounts/page.tsx](smartessweb/frontend/src/app/dashboard/manage-accounts/page.tsx)|Role-based UI controls for managing organization users. |
-### Top 5 Tests
-| File path with clickable link | Purpose (1 line description) |
-|------|------------|
-|[go/tests/rtsp_test.go](go/tests/rtsp_test.go)|Integration test for hub rtsp stream interception and publish to RabbitMQ|
-|[smartessweb/backend/tests/controllers/authController.test.js](smartessweb/backend/tests/controllers/authController.test.js)|Tests behavior of web authorization system|
-|[smartessweb/backend/tests/controllers/projectController.test.js](smartessweb/backend/tests/controllers/projectController.test.js)|Tests behavior of projects data retrieval for web|
-|[smartessweb/backend/tests/controllers/ticketsController.test.js](smartessweb/backend/tests/controllers/ticketsController.test.js)|Tests controllers to retrieve tickets related functionalities.|
-|[smartessweb/frontend/__tests__/ProjectComponent.test.tsx](https://github.com/leobrod44/Smartess/blob/main/smartessweb/frontend/__tests__/ProjectComponent.test.tsx)|Test the frontend Project component’s behavior|
+- **Docker**: Containerization and deployment
+- **Grafana**: Metrics visualization and dashboards
+- **Loki**: Centralized logging
+- **Prometheus**: Metrics collection and monitoring
+- **Promtail**: Log aggregation
 
+### Integration
 
-# RELEASE 1
+- **Home Assistant**: Smart home device orchestration
+- **RTSP**: Video streaming protocol
+- **STOMP**: Real-time messaging protocol
 
-## Release 1 Presentation/Demo
-https://drive.google.com/file/d/1VhbKIfahZcb6RqXoC6UfZoBpeX1w_sCs/view?usp=sharing
+## Architecture
 
-## Important files (Release 1)
-### Top 5 files
-  
-| File path with clickable link | Purpose (1 line description) |
-|------|------------|
-|[go/hub/hub.go](https://github.com/leobrod44/Smartess/blob/main/go/hub/hub.go)|Intercepts hub events and logs to server|
-|[go/server/rabbitmq/rabbitmq.go](https://github.com/leobrod44/Smartess/blob/main/go/server/rabbitmq/rabbitmq.go)|Server; main backend processor and orchestrator of microservices/managers|
-|[smartessweb/frontend/src/app/dashboard/page.tsx](https://github.com/leobrod44/Smartess/blob/main/smartessweb/frontend/src/app/dashboard/page.tsx)|Dashboard page, main entry for multiple components. |
-|[smartessweb/backend/app.js](https://github.com/leobrod44/Smartess/blob/main/smartessweb/backend/app.js)|Main entry for the backend (Web) and contains all routes|
-|[smartessweb/frontend/src/app/components/DashboardNavbar.tsx](https://github.com/leobrod44/Smartess/blob/main/smartessweb/frontend/src/app/components/DashboardNavbar.tsx)|Navigation bar used across the whole web|
-### Top 5 Tests
-| File path with clickable link | Purpose (1 line description) |
-|------|------------|
-|[go/tests/event_test.go](https://github.com/leobrod44/Smartess/blob/main/go/tests/event_test.go)|Integration test for hub events interception|
-|[smartessweb/backend/tests/controllers/authController.test.js](https://github.com/leobrod44/Smartess/blob/main/smartessweb/backend/tests/controllers/authController.test.js)|Tests behavior of web authorization system|
-|[smartessweb/backend/tests/controllers/projectController.test.js](https://github.com/leobrod44/Smartess/blob/main/smartessweb/backend/tests/controllers/projectController.test.js)|Tests behavior of projects data retrieval for web|
-|[smartessweb/backend/tests/controllers/hubcontroller.test.js](https://github.com/leobrod44/Smartess/blob/main/smartessweb/backend/tests/controllers/hubcontroller.test.js)|Tests behavior of hubs data retrieval for web|
-|[smartessweb/frontend/__tests__/ProjectComponent.test.tsx](https://github.com/leobrod44/Smartess/blob/main/smartessweb/frontend/__tests__/ProjectComponent.test.tsx)|Test the frontend Project component’s behavior|
+Smartess follows a distributed microservices architecture designed for scalability and reliability:
 
-## CI information
+```
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Smart Hubs    │────│   Go Services    │────│  Web Platform   │
+│ (Home Assistant)│    │  (Microservices) │    │   (Next.js)     │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+        │                        │                        │
+        │                ┌───────▼────────┐               │
+        │                │   RabbitMQ     │               │
+        │                │ (Message Bus)  │               │
+        │                └────────────────┘               │
+        │                                                 │
+        └─────────────────────────────────────────────────┘
+                    Event Flow & Real-time Updates
+```
 
-In this project, we use a Continuous Integration (CI) pipeline to automate the development and testing of our application. The main tools involved are GitHub Actions for automation, Docker for containerization, Jest for testing, and ESLint for checking code quality. This combination of tools ensures that code is consistently tested and validated as soon as changes are made. This setup catches issues early in the development process, reducing the cost and effort required to fix them if they were discovered later in the development lifecycle.
+**Hub Layer**: Home Assistant instances collect data from smart devices and sensors within individual units, publishing events to the message bus.
 
+**Service Layer**: Go-based microservices handle video streaming, event processing, data persistence, and integration with external systems.
 
-## Project Summary 
-Smartess is an all-in-one smart home system designed for condominium and residential communities. It serves both tenants and property owners, with tenants benefiting from a fully integrated smart home experience in their unit, while owners manage everything through a centralized application. This project involves building a web platform that property owners can use to monitor units and buildings in real-time. Data is collected through smart appliances and equipment on the property, processed, and presented to owners through the application, providing valuable insights and statistics. The application also acts as a communication tool for property owners, enabling announcements and automated emails. Owners can receive maintenance requests from tenants directly through the platform. The goal of this project is to create a user-friendly application that simplifies smart home management for property owners. 
+**Web Layer**: Next.js application provides the user interface for both tenants and property managers, with role-based access control and real-time updates.
 
+**Message Bus**: RabbitMQ ensures reliable communication between all system components, enabling real-time event processing and system resilience.
 
-## Team Members
-  
-| Name | Student ID | Github ID | Email Address|
-|------|------------|-----------|--------------|
-|**Lauren Rigante**| 40188593| [laurenrigante](https://github.com/laurenrigante)| lrigante@hotmail.com|
-|Leo Brodeur|40216409|[leobrod44](https://github.com/leobrod44)| leobrod44@gmail.com|
-|Layana Muhdi Al Tounsi| 40125569| [layanat](https://github.com/layanat)| tounsilayana@gmail.com |
-|Charles Eimer|26747310|[eimcharles](https://github.com/eimcharles)|c.eimer@me.com|
-|Antoine Cantin|40211205|[ChiefsBestPal](https://github.com/ChiefsBestPal)|antoine.cantin@icloud.com|
-|Tuan Anh Pham|40213926|[TuanAnh-P](https://github.com/TuanAnh-P)|1tuananhp@gmail.com|
-|Matthew Flaherty|40228462|[mattflahertyy](https://github.com/mattflahertyy) | matthewflaherty77@hotmail.com |
-|Renaud Senécal|40208309|[SenecalRenaud](https://github.com/SenecalRenaud)|senecalrenaud@gmail.com|
-|Ryan Li|40214839|[Ryan2Li](https://github.com/Ryan2Li)|ryanlijune@gmail.com|
-|Abdullah Amir|40215286|[AA789-ai](https://github.com/AA789-ai)|sonubhaii883@gmail.com|
+## Quick Start
 
+### Prerequisites
 
+- Docker and Docker Compose
+- Go 1.23 or later
+- Node.js 18 or later
+- Git
 
-## Developer getting started guide
-What would a new developer need to do to get the system up and running?
+### Development Setup
 
-Currently the hub and web system are being developped separately as for scalability benefits. Later in the project, some commands will be set up to launch both systems at the same time.
+1. **Clone the repository**
 
-For Hub: Refer to [Hub developper's guide](https://github.com/leobrod44/Smartess/blob/main/go#readme)
+   ```bash
+   git clone https://github.com/leobrod44/Smartess.git
+   cd Smartess
+   ```
 
-For Web: Refer to [Web developper's guide](https://github.com/leobrod44/Smartess/tree/main/smartessweb#readme)
+2. **Start the complete system**
 
+   ```bash
+   docker-compose up -d
+   ```
 
-## Diversity Statement
+3. **For development work on individual components:**
 
-At Smartess, we believe that diversity drives innovation. We are keen to build an inclusive environment where people from all backgrounds and values feel respected, included, and comfortable in their own homes. We understand that as a company that focuses on enhancing living experiences, our solutions come from diverse perspectives and skills of the team and the communities that we serve. We prioritize inclusivity in our software design and in the development of our platform by creating a user-friendly interface that ensures accessibility for all individuals regardless of their technological background. At Smartess, we work as a team where collaboration thrives across different cultures, backgrounds, and abilities to better understand and cater to the evolving needs of the world around us.
+   **Hub Development:**
+
+   ```bash
+   cd go
+   # See go/README.md for detailed setup instructions
+   ```
+
+   **Web Development:**
+
+   ```bash
+   cd smartessweb
+   # See smartessweb/README.md for detailed setup instructions
+   ```
+
+### Accessing the Application
+
+- **Web Interface**: http://localhost:3000
+- **API Documentation**: http://localhost:8080/docs
+- **Grafana Dashboard**: http://localhost:4000
+- **RabbitMQ Management**: http://localhost:15672
+
+## Key Features
+
+- **Real-time Monitoring**: Live video streams and sensor data from all connected units
+- **Event Management**: Automated alert processing and notification system
+- **User Management**: Role-based access control for tenants, managers, and administrators
+- **Maintenance Requests**: Digital ticketing system for tenant-to-owner communication
+- **Energy Analytics**: Consumption tracking and optimization recommendations
+- **Communication Hub**: Automated emails and community announcements
+- **Multi-tenant Architecture**: Secure isolation between different properties and units
+
+## Project Structure
+
+```
+├── go/                          # Backend services and hub integration
+│   ├── cmd/                     # Executable applications
+│   ├── common/                  # Shared utilities and configurations
+│   ├── hub/                     # Home Assistant integration
+│   ├── server/                  # Main API server
+│   └── tests/                   # Integration and unit tests
+├── smartessweb/                 # Web application
+│   ├── backend/                 # Node.js API server
+│   ├── frontend/                # Next.js React application
+│   └── tests/                   # Frontend and backend tests
+├── observability/               # Monitoring and logging stack
+│   ├── grafana/                 # Dashboard configurations
+│   ├── loki/                    # Log aggregation setup
+│   └── prometheus/              # Metrics collection config
+└── admin/                       # Project documentation and contracts
+```
+
+## Key Components
+
+### Critical Files
+
+| Component                                                                                                                            | Purpose                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------- |
+| [`go/hub/rtsp/rtsp.go`](go/hub/rtsp/rtsp.go)                                                                                         | Video stream processing and RabbitMQ publishing    |
+| [`go/hub/events/events.go`](go/hub/events/events.go)                                                                                 | Home Assistant event handling and alert processing |
+| [`smartessweb/frontend/src/app/dashboard/page.tsx`](smartessweb/frontend/src/app/dashboard/page.tsx)                                 | Main dashboard interface                           |
+| [`smartessweb/backend/controllers/manageAccountsController.js`](smartessweb/backend/controllers/manageAccountsController.js)         | User account management logic                      |
+| [`smartessweb/frontend/src/app/dashboard/manage-accounts/page.tsx`](smartessweb/frontend/src/app/dashboard/manage-accounts/page.tsx) | Role-based user management UI                      |
+
+### Test Coverage
+
+| Test File                                                                                                                                          | Purpose                             |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| [`go/tests/rtsp_test.go`](go/tests/rtsp_test.go)                                                                                                   | RTSP stream integration testing     |
+| [`smartessweb/backend/tests/controllers/manageAccountsController.test.js`](smartessweb/backend/tests/controllers/manageAccountsController.test.js) | Account management API testing      |
+| [`smartessweb/backend/tests/controllers/projectController.test.js`](smartessweb/backend/tests/controllers/projectController.test.js)               | Project data retrieval testing      |
+| [`smartessweb/backend/tests/controllers/ticketsController.test.js`](smartessweb/backend/tests/controllers/ticketsController.test.js)               | Maintenance ticket system testing   |
+| [`smartessweb/frontend/__tests__/ProjectComponent.test.tsx`](smartessweb/frontend/__tests__/ProjectComponent.test.tsx)                             | Frontend component behavior testing |
+
+### Development Guidelines
+
+- Follow the established patterns in each technology stack
+- Write comprehensive tests for new features
+- Document any new APIs or significant changes
+- Use conventional commit messages
+- Ensure Docker builds pass before submitting
+
+### Code Quality
+
+Our CI pipeline automatically runs:
+
+- ESLint for code quality checks
+- Jest for comprehensive testing
+- Docker builds for deployment validation
+- Security scans for dependency vulnerabilities
+
+## Release History
+
+### Release 3 (Current)
+
+- Enhanced user management with role-based permissions
+- Improved real-time video streaming performance
+- Advanced analytics dashboard with energy consumption tracking
+- [Demo Video](https://drive.google.com/file/d/1w1BCWQPlqrisWkyoj2oj-TvpI7K_VQ4S/view?usp=sharing)
+- [Presentation Slides](https://github.com/user-attachments/files/19696745/_Smartess.Release.3.Presentation.pdf)
+
+### Release 2
+
+- Integrated Home Assistant event processing
+- Multi-tenant architecture implementation
+- Automated notification system
+- [Demo Video](https://drive.google.com/file/d/1MvIh3tUW6fsqQBHBUWBLqvQHEsESYOVF/view?usp=sharing)
+- [Presentation Slides](https://github.com/user-attachments/files/19556576/Smartess.Release.2.Presentation.pdf)
+
+### Release 1
+
+- Core platform architecture
+- Basic dashboard functionality
+- Initial hub integration
+- [Demo Video](https://drive.google.com/file/d/1VhbKIfahZcb6RqXoC6UfZoBpeX1w_sCs/view?usp=sharing)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Diversity and Inclusion
+
+Smartess is committed to building technology that serves diverse communities effectively. We believe that inclusive design leads to better solutions, and we actively work to ensure our platform is accessible to users regardless of their technical background, cultural context, or physical abilities. Our development practices prioritize user-centered design and accessibility standards to create truly inclusive smart home experiences.
